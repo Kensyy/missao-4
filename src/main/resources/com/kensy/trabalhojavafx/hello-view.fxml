@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" minHeight="-Infinity" minWidth="-Infinity" prefHeight="510.0" prefWidth="693.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kensy.trabalhojavafx.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Pane>
+        <children>
+            <Label alignment="TOP_LEFT" depthTest="ENABLE" prefHeight="38.0" prefWidth="362.0" text="Bem-Vindo ao Meu Site" textAlignment="CENTER">
+                <font>
+                    <Font name="Times New Roman Bold" size="33.0" />
+                </font>
+            </Label>
+            <Label contentDisplay="TOP" layoutY="42.0" prefHeight="19.0" prefWidth="219.0" text="Este é um parágrafo de exemplo.">
+                <font>
+                    <Font name="Times New Roman" size="16.0" />
+                </font></Label>
+            <Button layoutY="71.0" onAction="#goToImagemAPI" text="Clique Aqui" />
+            <Label layoutX="2.0" layoutY="102.0" text="Seção Importante">
+                <font>
+                    <Font name="Times New Roman Bold" size="23.0" />
+                </font>
+            </Label>
+            <Label layoutX="2.0" layoutY="133.0" text="Esta é uma seção com conteúdo relevante.">
+                <font>
+                    <Font name="Times New Roman" size="15.0" />
+                </font>
+            </Label>
+            <ImageView fitHeight="300.0" fitWidth="350.0" layoutX="3.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@\Users\victo\Desktop\marca.png" />
+                </image>
+            </ImageView>
+        </children>
+    </Pane>
+
+    <Label fx:id="welcomeText" prefHeight="17.0" prefWidth="484.0" />
+</VBox>
